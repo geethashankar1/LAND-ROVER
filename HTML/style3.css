@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  .header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header .logo {
+    max-width: 150px;
+    display: block;
+    margin: 0.5rem auto;
+  }
+  
+  .nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0.5rem 0;
+  }
+  
+  .nav li {
+    margin: 0 1rem;
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  .vehicles {
+    background: #f9f9f9;
+    padding: 2rem 0;
+  }
+  
+  .vehicles .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  .vehicle {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .vehicle img {
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  .vehicle h3 {
+    margin: 1rem 0 0.5rem;
+    font-size: 1.2rem;
+  }
+  
+  .vehicle p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  .vehicle button {
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border: none;
+    background: #000;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .vehicle button:hover {
+    background: #333;
+  }
+  
+  .vehicle a {
+    color: #000;
+    font-size: 0.9rem;
+    text-decoration: underline;
+  }
+  
+  .vehicle a:hover {
+    text-decoration: none;
+  }
+  
+  @media (max-width: 768px) {
+    .nav ul {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .vehicle {
+      padding: 0.5rem;
+    }
+  
+    .vehicle h3 {
+      font-size: 1rem;
+    }
+  
+    .vehicle p {
+      font-size: 0.8rem;
+    }
+  }
+  
